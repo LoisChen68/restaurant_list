@@ -27,6 +27,16 @@ app.get('/restaurant/:restaurant_id', (req, res) => {
   res.render('show', { restaurant })
 })
 
+//設定搜尋功能
+app.get('/search', (req, res) => {
+  const keyword = req.query.keyword.trim().toLowerCase()
+  const filterRestaurant = restaurantData.filter(data => {
+    return data.name.trim().toLowerCase().includes(keyword) ||
+      data.category.includes(keyword)
+  })
+  res.render('index', { restaurantData: filterRestaurant, keyword })
+})
+
 //設定監聽
 app.listen(port, () => {
   console.log(`Express is listening on localhost:${port}`)
