@@ -43,8 +43,7 @@
 
 # 開發工具
 
-- Node.js 14.16.0
-- Express 4.16.4
+- Node.js 16.16.0
+- Express 4.18.1
 - Express-Handlebars 3.0.0
 - Bootstrap 4.3.1
-- Mongoose 5.9.7
