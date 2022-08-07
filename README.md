@@ -32,7 +32,7 @@
 5. 看見此行訊息代表成功運行，可用瀏覽器進入到以下網址
 
    ```bash
-   Listening on http://localhost:3000
+   Express is listening on localhost:3000
    ```
 
 6. 結束運行輸入
