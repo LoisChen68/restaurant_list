@@ -21,6 +21,12 @@ app.get('/', (req, res) => {
   res.render('index', { restaurantData })
 })
 
+//設定餐廳詳細頁面動態路由
+app.get('/restaurant/:restaurant_id', (req, res) => {
+  const restaurant = restaurantData.find(restaurant => restaurant.id.toString() === req.params.restaurant_id)
+  res.render('show', { restaurant })
+})
+
 //設定監聽
 app.listen(port, () => {
   console.log(`Express is listening on localhost:${port}`)
