@@ -3,7 +3,6 @@
 ![Index page about Restaurant List](./public/img.png)
 
 # 介紹
----
 簡易的餐廳清單，包含餐廳詳細資料和搜尋功能
 
 # 功能
@@ -15,7 +14,6 @@
 - 刪除餐廳功能
 
 # 開始使用
----
 
 1. 請先安裝 node.js 與 npm
 2. 將專案 clone 到本地
