@@ -7,8 +7,12 @@
   <title>我的餐廳清單</title>
 
   {{!-- 載入css檔案 --}}
+  <link rel="shortcut icon"
+    href="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/6227/restaurant-list-logo.png"
+    type="image/x-icon" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+  <link rel="stylesheet" href="/style/global.css">
 </head>
 
 <body>
@@ -28,6 +32,10 @@
   </header>
   <!-- partial templates will replace the part of "body" here -->
   {{{ body }}}
+
+  {{!-- 載入javascript 檔案 --}}
+  <script src="/javascripts/popper.js"></script>
+  <script src="/javascripts/bootstrap.js"></script>
 
 </body>
 
